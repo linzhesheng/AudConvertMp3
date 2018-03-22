@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035C046120633E4A00FDE56C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C046020633E4A00FDE56C /* AppDelegate.m */; };
+		035C046420633E4A00FDE56C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C046320633E4A00FDE56C /* ViewController.m */; };
+		035C046720633E4A00FDE56C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035C046520633E4A00FDE56C /* Main.storyboard */; };
+		035C046920633E4A00FDE56C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035C046820633E4A00FDE56C /* Assets.xcassets */; };
+		035C046C20633E4A00FDE56C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035C046A20633E4A00FDE56C /* LaunchScreen.storyboard */; };
+		035C046F20633E4A00FDE56C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C046E20633E4A00FDE56C /* main.m */; };
+		035C047920633E4A00FDE56C /* ____aud_mp3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C047820633E4A00FDE56C /* ____aud_mp3Tests.m */; };
+		035C048420633E4A00FDE56C /* ____aud_mp3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C048320633E4A00FDE56C /* ____aud_mp3UITests.m */; };
+		035C04A120633E5600FDE56C /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 035C049320633E5600FDE56C /* libmp3lame.a */; };
+		035C04A220633E5600FDE56C /* libSKP_SILK_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 035C049420633E5600FDE56C /* libSKP_SILK_SDK.a */; };
+		035C04A320633E5600FDE56C /* NSError+LZSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C049620633E5600FDE56C /* NSError+LZSCategory.m */; };
+		035C04A420633E5600FDE56C /* PCMEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C049820633E5600FDE56C /* PCMEncoder.m */; };
+		035C04A520633E5600FDE56C /* SilkDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C049A20633E5600FDE56C /* SilkDecoder.m */; };
+		035C04A620633E5600FDE56C /* WXAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C04A020633E5600FDE56C /* WXAudioManager.m */; };
+		035C04AC206388A800FDE56C /* 7.aud in Resources */ = {isa = PBXBuildFile; fileRef = 035C04AB206388A800FDE56C /* 7.aud */; };
+		035C04AD206388A800FDE56C /* 7.aud in Resources */ = {isa = PBXBuildFile; fileRef = 035C04AB206388A800FDE56C /* 7.aud */; };
+		035C04AE206388A800FDE56C /* 7.aud in Resources */ = {isa = PBXBuildFile; fileRef = 035C04AB206388A800FDE56C /* 7.aud */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		035C047520633E4A00FDE56C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 035C045420633E4A00FDE56C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 035C045B20633E4A00FDE56C;
+			remoteInfo = "微信语音aud转mp3";
+		};
+		035C048020633E4A00FDE56C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 035C045420633E4A00FDE56C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 035C045B20633E4A00FDE56C;
+			remoteInfo = "微信语音aud转mp3";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		035C045C20633E4A00FDE56C /* 微信语音aud转mp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微信语音aud转mp3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		035C045F20633E4A00FDE56C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		035C046020633E4A00FDE56C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		035C046220633E4A00FDE56C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		035C046320633E4A00FDE56C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		035C046620633E4A00FDE56C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		035C046820633E4A00FDE56C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		035C046B20633E4A00FDE56C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		035C046D20633E4A00FDE56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035C046E20633E4A00FDE56C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		035C047420633E4A00FDE56C /* 微信语音aud转mp3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信语音aud转mp3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		035C047820633E4A00FDE56C /* ____aud_mp3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____aud_mp3Tests.m"; sourceTree = "<group>"; };
+		035C047A20633E4A00FDE56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035C047F20633E4A00FDE56C /* 微信语音aud转mp3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信语音aud转mp3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		035C048320633E4A00FDE56C /* ____aud_mp3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____aud_mp3UITests.m"; sourceTree = "<group>"; };
+		035C048520633E4A00FDE56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035C049220633E5600FDE56C /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		035C049320633E5600FDE56C /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		035C049420633E5600FDE56C /* libSKP_SILK_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSKP_SILK_SDK.a; sourceTree = "<group>"; };
+		035C049520633E5600FDE56C /* NSError+LZSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+LZSCategory.h"; sourceTree = "<group>"; };
+		035C049620633E5600FDE56C /* NSError+LZSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+LZSCategory.m"; sourceTree = "<group>"; };
+		035C049720633E5600FDE56C /* PCMEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMEncoder.h; sourceTree = "<group>"; };
+		035C049820633E5600FDE56C /* PCMEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMEncoder.m; sourceTree = "<group>"; };
+		035C049920633E5600FDE56C /* SilkDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SilkDecoder.h; sourceTree = "<group>"; };
+		035C049A20633E5600FDE56C /* SilkDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SilkDecoder.m; sourceTree = "<group>"; };
+		035C049B20633E5600FDE56C /* SKP_Silk_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKP_Silk_control.h; sourceTree = "<group>"; };
+		035C049C20633E5600FDE56C /* SKP_Silk_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKP_Silk_errors.h; sourceTree = "<group>"; };
+		035C049D20633E5600FDE56C /* SKP_Silk_SDK_API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKP_Silk_SDK_API.h; sourceTree = "<group>"; };
+		035C049E20633E5600FDE56C /* SKP_Silk_typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKP_Silk_typedef.h; sourceTree = "<group>"; };
+		035C049F20633E5600FDE56C /* WXAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAudioManager.h; sourceTree = "<group>"; };
+		035C04A020633E5600FDE56C /* WXAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXAudioManager.m; sourceTree = "<group>"; };
+		035C04AB206388A800FDE56C /* 7.aud */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.aud; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		035C045920633E4A00FDE56C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035C04A220633E5600FDE56C /* libSKP_SILK_SDK.a in Frameworks */,
+				035C04A120633E5600FDE56C /* libmp3lame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035C047120633E4A00FDE56C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035C047C20633E4A00FDE56C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		035C045320633E4A00FDE56C = {
+			isa = PBXGroup;
+			children = (
+				035C045E20633E4A00FDE56C /* 微信语音aud转mp3 */,
+				035C047720633E4A00FDE56C /* 微信语音aud转mp3Tests */,
+				035C048220633E4A00FDE56C /* 微信语音aud转mp3UITests */,
+				035C045D20633E4A00FDE56C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		035C045D20633E4A00FDE56C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				035C045C20633E4A00FDE56C /* 微信语音aud转mp3.app */,
+				035C047420633E4A00FDE56C /* 微信语音aud转mp3Tests.xctest */,
+				035C047F20633E4A00FDE56C /* 微信语音aud转mp3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		035C045E20633E4A00FDE56C /* 微信语音aud转mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				035C049120633E5500FDE56C /* AudioTool */,
+				035C045F20633E4A00FDE56C /* AppDelegate.h */,
+				035C046020633E4A00FDE56C /* AppDelegate.m */,
+				035C046220633E4A00FDE56C /* ViewController.h */,
+				035C046320633E4A00FDE56C /* ViewController.m */,
+				035C046520633E4A00FDE56C /* Main.storyboard */,
+				035C046820633E4A00FDE56C /* Assets.xcassets */,
+				035C046A20633E4A00FDE56C /* LaunchScreen.storyboard */,
+				035C046D20633E4A00FDE56C /* Info.plist */,
+				035C046E20633E4A00FDE56C /* main.m */,
+				035C04AB206388A800FDE56C /* 7.aud */,
+			);
+			path = "微信语音aud转mp3";
+			sourceTree = "<group>";
+		};
+		035C047720633E4A00FDE56C /* 微信语音aud转mp3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				035C047820633E4A00FDE56C /* ____aud_mp3Tests.m */,
+				035C047A20633E4A00FDE56C /* Info.plist */,
+			);
+			path = "微信语音aud转mp3Tests";
+			sourceTree = "<group>";
+		};
+		035C048220633E4A00FDE56C /* 微信语音aud转mp3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				035C048320633E4A00FDE56C /* ____aud_mp3UITests.m */,
+				035C048520633E4A00FDE56C /* Info.plist */,
+			);
+			path = "微信语音aud转mp3UITests";
+			sourceTree = "<group>";
+		};
+		035C049120633E5500FDE56C /* AudioTool */ = {
+			isa = PBXGroup;
+			children = (
+				035C049F20633E5600FDE56C /* WXAudioManager.h */,
+				035C04A020633E5600FDE56C /* WXAudioManager.m */,
+				035C049320633E5600FDE56C /* libmp3lame.a */,
+				035C049420633E5600FDE56C /* libSKP_SILK_SDK.a */,
+				035C049220633E5600FDE56C /* lame.h */,
+				035C049B20633E5600FDE56C /* SKP_Silk_control.h */,
+				035C049C20633E5600FDE56C /* SKP_Silk_errors.h */,
+				035C049D20633E5600FDE56C /* SKP_Silk_SDK_API.h */,
+				035C049E20633E5600FDE56C /* SKP_Silk_typedef.h */,
+				035C049720633E5600FDE56C /* PCMEncoder.h */,
+				035C049820633E5600FDE56C /* PCMEncoder.m */,
+				035C049920633E5600FDE56C /* SilkDecoder.h */,
+				035C049A20633E5600FDE56C /* SilkDecoder.m */,
+				035C049520633E5600FDE56C /* NSError+LZSCategory.h */,
+				035C049620633E5600FDE56C /* NSError+LZSCategory.m */,
+			);
+			path = AudioTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		035C045B20633E4A00FDE56C /* 微信语音aud转mp3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035C048820633E4A00FDE56C /* Build configuration list for PBXNativeTarget "微信语音aud转mp3" */;
+			buildPhases = (
+				035C045820633E4A00FDE56C /* Sources */,
+				035C045920633E4A00FDE56C /* Frameworks */,
+				035C045A20633E4A00FDE56C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "微信语音aud转mp3";
+			productName = "微信语音aud转mp3";
+			productReference = 035C045C20633E4A00FDE56C /* 微信语音aud转mp3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		035C047320633E4A00FDE56C /* 微信语音aud转mp3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035C048B20633E4A00FDE56C /* Build configuration list for PBXNativeTarget "微信语音aud转mp3Tests" */;
+			buildPhases = (
+				035C047020633E4A00FDE56C /* Sources */,
+				035C047120633E4A00FDE56C /* Frameworks */,
+				035C047220633E4A00FDE56C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				035C047620633E4A00FDE56C /* PBXTargetDependency */,
+			);
+			name = "微信语音aud转mp3Tests";
+			productName = "微信语音aud转mp3Tests";
+			productReference = 035C047420633E4A00FDE56C /* 微信语音aud转mp3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		035C047E20633E4A00FDE56C /* 微信语音aud转mp3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035C048E20633E4A00FDE56C /* Build configuration list for PBXNativeTarget "微信语音aud转mp3UITests" */;
+			buildPhases = (
+				035C047B20633E4A00FDE56C /* Sources */,
+				035C047C20633E4A00FDE56C /* Frameworks */,
+				035C047D20633E4A00FDE56C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				035C048120633E4A00FDE56C /* PBXTargetDependency */,
+			);
+			name = "微信语音aud转mp3UITests";
+			productName = "微信语音aud转mp3UITests";
+			productReference = 035C047F20633E4A00FDE56C /* 微信语音aud转mp3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		035C045420633E4A00FDE56C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = JingZhuan;
+				TargetAttributes = {
+					035C045B20633E4A00FDE56C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					035C047320633E4A00FDE56C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 035C045B20633E4A00FDE56C;
+					};
+					035C047E20633E4A00FDE56C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 035C045B20633E4A00FDE56C;
+					};
+				};
+			};
+			buildConfigurationList = 035C045720633E4A00FDE56C /* Build configuration list for PBXProject "微信语音aud转mp3" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 035C045320633E4A00FDE56C;
+			productRefGroup = 035C045D20633E4A00FDE56C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				035C045B20633E4A00FDE56C /* 微信语音aud转mp3 */,
+				035C047320633E4A00FDE56C /* 微信语音aud转mp3Tests */,
+				035C047E20633E4A00FDE56C /* 微信语音aud转mp3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		035C045A20633E4A00FDE56C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035C04AC206388A800FDE56C /* 7.aud in Resources */,
+				035C046C20633E4A00FDE56C /* LaunchScreen.storyboard in Resources */,
+				035C046920633E4A00FDE56C /* Assets.xcassets in Resources */,
+				035C046720633E4A00FDE56C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035C047220633E4A00FDE56C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035C04AD206388A800FDE56C /* 7.aud in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035C047D20633E4A00FDE56C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035C04AE206388A800FDE56C /* 7.aud in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		035C045820633E4A00FDE56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035C046420633E4A00FDE56C /* ViewController.m in Sources */,
+				035C04A520633E5600FDE56C /* SilkDecoder.m in Sources */,
+				035C046F20633E4A00FDE56C /* main.m in Sources */,
+				035C046120633E4A00FDE56C /* AppDelegate.m in Sources */,
+				035C04A620633E5600FDE56C /* WXAudioManager.m in Sources */,
+				035C04A320633E5600FDE56C /* NSError+LZSCategory.m in Sources */,
+				035C04A420633E5600FDE56C /* PCMEncoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035C047020633E4A00FDE56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035C047920633E4A00FDE56C /* ____aud_mp3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035C047B20633E4A00FDE56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035C048420633E4A00FDE56C /* ____aud_mp3UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		035C047620633E4A00FDE56C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 035C045B20633E4A00FDE56C /* 微信语音aud转mp3 */;
+			targetProxy = 035C047520633E4A00FDE56C /* PBXContainerItemProxy */;
+		};
+		035C048120633E4A00FDE56C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 035C045B20633E4A00FDE56C /* 微信语音aud转mp3 */;
+			targetProxy = 035C048020633E4A00FDE56C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		035C046520633E4A00FDE56C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035C046620633E4A00FDE56C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		035C046A20633E4A00FDE56C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035C046B20633E4A00FDE56C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		035C048620633E4A00FDE56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		035C048720633E4A00FDE56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		035C048920633E4A00FDE56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 25G822CN7K;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "微信语音aud转mp3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/微信语音aud转mp3/AudioTool",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yidewei2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "18d3d2b8-5290-4279-a1f9-435567dad88f";
+				PROVISIONING_PROFILE_SPECIFIER = yidewei2TestDevelop;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		035C048A20633E4A00FDE56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "微信语音aud转mp3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/微信语音aud转mp3/AudioTool",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yidewei2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		035C048C20633E4A00FDE56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "微信语音aud转mp3Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingzhuan.----aud-mp3Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/微信语音aud转mp3.app/微信语音aud转mp3";
+			};
+			name = Debug;
+		};
+		035C048D20633E4A00FDE56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "微信语音aud转mp3Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingzhuan.----aud-mp3Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/微信语音aud转mp3.app/微信语音aud转mp3";
+			};
+			name = Release;
+		};
+		035C048F20633E4A00FDE56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "微信语音aud转mp3UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingzhuan.----aud-mp3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "微信语音aud转mp3";
+			};
+			name = Debug;
+		};
+		035C049020633E4A00FDE56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "微信语音aud转mp3UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingzhuan.----aud-mp3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "微信语音aud转mp3";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		035C045720633E4A00FDE56C /* Build configuration list for PBXProject "微信语音aud转mp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035C048620633E4A00FDE56C /* Debug */,
+				035C048720633E4A00FDE56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		035C048820633E4A00FDE56C /* Build configuration list for PBXNativeTarget "微信语音aud转mp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035C048920633E4A00FDE56C /* Debug */,
+				035C048A20633E4A00FDE56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		035C048B20633E4A00FDE56C /* Build configuration list for PBXNativeTarget "微信语音aud转mp3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035C048C20633E4A00FDE56C /* Debug */,
+				035C048D20633E4A00FDE56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		035C048E20633E4A00FDE56C /* Build configuration list for PBXNativeTarget "微信语音aud转mp3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035C048F20633E4A00FDE56C /* Debug */,
+				035C049020633E4A00FDE56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 035C045420633E4A00FDE56C /* Project object */;
+}
